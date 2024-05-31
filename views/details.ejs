@@ -1,0 +1,29 @@
+<%- include('parts/top'); %>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="col-lg-4 col-md-4 all">
+                <div class="product-item">
+                    <a href="#"><img src="<%= book.image %>" style="height: 500px;" alt=""></a>
+                    <div class="down-content">
+                        <a href="#">
+                            <h4>
+                                <%= book.title %>
+                            </h4>
+                            <h5>
+                                <%= book.author %>
+                            </h5>
+                        </a>
+                        <h6>$<%= book.price %>
+                        </h6>
+                        <p><!-- Add your content here --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('parts/bottom'); %>
